@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Peace Obisike — Legal Virtual Assistant</title>
+<meta name="description" content="Remote legal virtual assistant supporting US and UK attorneys with drafting, research, case administration and client intake.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#17233A;
+    --ink-soft:#4A5568;
+    --paper:#EEF1F4;
+    --white:#FFFFFF;
+    --brass:#A8853A;
+    --line:#CDD4DD;
+    --serif:"Fraunces",Georgia,serif;
+    --sans:"Public Sans",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.6;font-size:17px}
+  a{color:var(--ink)}
+  a:focus-visible,button:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+  h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.1;letter-spacing:-0.01em}
+
+  /* Nav */
+  nav{padding:22px 0}
+  nav .wrap{display:flex;justify-content:space-between;align-items:baseline;gap:20px;flex-wrap:wrap}
+  .brand{font-family:var(--serif);font-size:22px;text-decoration:none}
+  nav ul{list-style:none;display:flex;gap:26px;font-size:15px}
+  nav ul a{text-decoration:none;color:var(--ink-soft)}
+  nav ul a:hover{color:var(--ink);text-decoration:underline;text-underline-offset:4px}
+
+  /* Hero */
+  .hero{padding:56px 0 72px;border-bottom:1px solid var(--line)}
+  .hero .wrap{display:grid;grid-template-columns:1.4fr 1fr;gap:56px;align-items:end}
+  .hero h1{font-size:clamp(38px,6vw,64px);margin-bottom:24px}
+  .hero p.lead{font-size:20px;color:var(--ink-soft);max-width:34em;margin-bottom:34px}
+  .btn{display:inline-block;background:var(--ink);color:var(--white);text-decoration:none;padding:14px 24px;border-radius:4px;font-weight:500}
+  .btn:hover{background:#0F1729}
+  .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--ink);margin-left:10px}
+  .btn.ghost:hover{background:var(--white)}
+  .glance{background:var(--white);border-top:3px solid var(--brass);padding:26px 28px}
+  .glance dt{font-size:13px;color:var(--ink-soft);margin-top:14px}
+  .glance dt:first-child{margin-top:0}
+  .glance dd{font-weight:500}
+
+  /* Sections */
+  section{padding:72px 0;border-bottom:1px solid var(--line)}
+  section h2{font-size:clamp(30px,4vw,40px);margin-bottom:12px}
+  .intro{color:var(--ink-soft);max-width:36em;margin-bottom:40px}
+
+  /* Services: two-column definition list, not cards */
+  .services{display:grid;grid-template-columns:1fr;gap:0}
+  .service{display:grid;grid-template-columns:260px 1fr;gap:24px;padding:26px 0;border-top:1px solid var(--line)}
+  .service:last-child{border-bottom:1px solid var(--line)}
+  .service h3{font-size:22px}
+  .service p{color:var(--ink-soft);max-width:38em}
+  .service ul{margin-top:10px;padding-left:18px;color:var(--ink-soft);font-size:15px}
+
+  /* Samples */
+  .samples{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .sample{background:var(--white);padding:26px;border-left:3px solid var(--brass)}
+  .sample .kind{font-size:13px;color:var(--brass);font-weight:600;margin-bottom:8px}
+  .sample h3{font-size:20px;margin-bottom:10px}
+  .sample p{font-size:15px;color:var(--ink-soft)}
+  .sample a{display:inline-block;margin-top:14px;font-size:15px}
+
+  /* About */
+  .about .wrap{display:grid;grid-template-columns:1fr 1.4fr;gap:56px}
+  .about p{margin-bottom:16px;max-width:38em}
+  .about .facts{border-top:3px solid var(--brass);background:var(--white);padding:26px 28px;align-self:start}
+  .about .facts li{list-style:none;padding:10px 0;border-bottom:1px solid var(--line);font-size:15px}
+  .about .facts li:last-child{border-bottom:0}
+
+  /* How we work */
+  .steps{counter-reset:step;list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+  .steps li{counter-increment:step}
+  .steps li::before{content:counter(step);font-family:var(--serif);font-size:40px;color:var(--brass);display:block;line-height:1;margin-bottom:10px}
+  .steps h3{font-size:18px;margin-bottom:6px}
+  .steps p{font-size:15px;color:var(--ink-soft)}
+
+  /* Contact */
+  .contact{border-bottom:0;padding-bottom:40px}
+  .contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+  .contact .big{font-family:var(--serif);font-size:clamp(22px,3vw,30px);text-decoration:none;display:block;margin:18px 0}
+  .contact .big:hover{text-decoration:underline;text-underline-offset:6px}
+  .contact ul{list-style:none;color:var(--ink-soft)}
+  .contact li{padding:8px 0}
+  footer{padding:24px 0 48px;font-size:14px;color:var(--ink-soft)}
+
+  @media (max-width:820px){
+    .hero .wrap,.about .wrap,.contact .wrap{grid-template-columns:1fr;gap:36px}
+    .service{grid-template-columns:1fr;gap:8px}
+    .samples{grid-template-columns:1fr}
+    .steps{grid-template-columns:1fr 1fr}
+    .btn.ghost{margin-left:0;margin-top:10px}
+  }
+  @media (max-width:480px){.steps{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top">Peace Obisike</a>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#work">Work samples</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <h1>The hours your practice loses to paperwork, returned to you.</h1>
+      <p class="lead">I'm a legal virtual assistant working remotely with solo attorneys and small firms in the US and UK. Drafting, research, case administration and client intake — handled reliably, so you can spend billable time on the law.</p>
+      <a class="btn" href="#contact">Book a discovery call</a>
+      <a class="btn ghost" href="#work">See work samples</a>
+    </div>
+    <dl class="glance">
+      <dt>Working hours</dt>
+      <dd>Overlaps with US Eastern mornings and the full UK working day (WAT, UTC+1)</dd>
+      <dt>Availability</dt>
+      <dd>Taking on new clients — part-time retainer or per-project</dd>
+      <dt>Tools</dt>
+      <dd>Clio, MyCase, Microsoft 365, Google Workspace, Westlaw/LexisNexis basics, Adobe Acrobat</dd>
+    </dl>
+  </div>
+</header>
+
+<section id="services">
+  <div class="wrap">
+    <h2>What I take off your desk</h2>
+    <p class="intro">Everything below is the work that needs care and a legal eye but not a licensed attorney's hour.</p>
+
+    <div class="services">
+      <div class="service">
+        <h3>Document drafting &amp; review</h3>
+        <div>
+          <p>First drafts and clean-ups of routine documents from your templates and instructions, formatted and proofread so they arrive ready for your review.</p>
+          <ul>
+            <li>Engagement letters, demand letters, correspondence</li>
+            <li>Contracts, NDAs and agreements from precedent</li>
+            <li>Pleadings, motions and discovery documents (formatting, exhibits, citation checks)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service">
+        <h3>Legal research &amp; memos</h3>
+        <div>
+          <p>Focused research on a defined question, summarised in a short memo with sources cited so you can verify quickly.</p>
+          <ul>
+            <li>Case law and statute look-ups</li>
+            <li>Summaries of judgments, regulations and guidance</li>
+            <li>Comparison notes across US states or UK jurisdictions</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service">
+        <h3>Case &amp; calendar management</h3>
+        <div>
+          <p>Deadlines, court dates and file organisation kept current in your practice management system, with reminders before anything falls due.</p>
+          <ul>
+            <li>Docketing and deadline tracking</li>
+            <li>Matter set-up and file organisation in Clio / MyCase</li>
+            <li>Billing entries, time capture and invoice preparation</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service">
+        <h3>Client intake &amp; communication</h3>
+        <div>
+          <p>A professional first point of contact for prospective and existing clients, so enquiries are answered the same day and nothing sits in the inbox.</p>
+          <ul>
+            <li>Intake calls and questionnaires, conflict checks</li>
+            <li>Email and inbox management, appointment scheduling</li>
+            <li>Client status updates and follow-ups</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service">
+        <h3>General practice support</h3>
+        <div>
+          <p>The administrative layer that keeps a small firm running smoothly.</p>
+          <ul>
+            <li>Transcription and note-taking</li>
+            <li>Data entry, spreadsheets and reporting</li>
+            <li>Presentation and document formatting</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <h2>Work samples</h2>
+    <p class="intro">Redacted or anonymised examples. Full samples are available on request.</p>
+    <div class="samples">
+      <div class="sample">
+        <div class="kind">Drafting</div>
+        <h3>[Sample title — e.g. Demand letter, breach of contract]</h3>
+        <p>[One or two sentences: what the document was, what you were asked to do, and the outcome.]</p>
+        <a href="#">View sample (PDF)</a>
+      </div>
+      <div class="sample">
+        <div class="kind">Research</div>
+        <h3>[Sample title — e.g. Memo on limitation periods]</h3>
+        <p>[One or two sentences describing the research question and how you answered it.]</p>
+        <a href="#">View sample (PDF)</a>
+      </div>
+      <div class="sample">
+        <div class="kind">Governance</div>
+        <h3>Constitution for a student organisation</h3>
+        <p>Drafted the founding constitution for a student body: structure, officer roles, elections, meetings and amendment procedure.</p>
+        <a href="#">View sample (PDF)</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="wrap">
+    <ul class="facts">
+      <li>Based in Nigeria, working remotely with US and UK practices</li>
+      <li>Completing a Legal Virtual Assistant certification programme</li>
+      <li>[Your degree / current study — e.g. LL.B candidate, University of X]</li>
+      <li>Background in office administration and business documentation</li>
+      <li>Fluent English, written and spoken</li>
+    </ul>
+    <div>
+      <h2>About me</h2>
+      <p>I'm Peace Obisike. I came to legal support work through a mix of law study, student leadership and several years of administrative and documentation work for businesses — drafting agreements, preparing reports and keeping organisations' paperwork in order.</p>
+      <p>What I bring to a practice is care with detail, a calm way of handling a full inbox, and the habit of asking one clear question early rather than guessing. I treat confidentiality as non-negotiable and am happy to sign an NDA before any files change hands.</p>
+      <p>[Add two or three lines about you: what kind of law interests you, what you're studying, or what a past employer would say about working with you.]</p>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="wrap">
+    <h2>How we'd work together</h2>
+    <p class="intro">Simple and predictable from the first call onward.</p>
+    <ol class="steps">
+      <li><h3>Discovery call</h3><p>Thirty minutes on what's eating your time and what you want handed off.</p></li>
+      <li><h3>Trial task</h3><p>One small, real piece of work so you can judge the quality before committing.</p></li>
+      <li><h3>Agree the retainer</h3><p>Fixed weekly hours or a per-project quote, with an NDA and clear turnaround times.</p></li>
+      <li><h3>Ongoing support</h3><p>Weekly check-in, shared task list, and a short end-of-week summary of everything done.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div>
+      <h2>Let's talk</h2>
+      <p class="intro" style="margin-bottom:0">Email is best. I reply within one business day.</p>
+      <a class="big" href="mailto:peace.c.obisike@gmail.com">peace.c.obisike@gmail.com</a>
+    </div>
+    <ul>
+      <li>LinkedIn: <a href="#">[your LinkedIn URL]</a></li>
+      <li>WhatsApp: <a href="#">[+234 ...]</a></li>
+      <li>Time zone: West Africa Time (UTC+1)</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© 2026 Peace Obisike · Legal Virtual Assistant. Not a law firm; services are provided under attorney supervision.</div>
+</footer>
+
+</body>
+</html>

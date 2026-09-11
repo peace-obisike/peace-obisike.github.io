@@ -60,6 +60,11 @@
   .hero .btn:hover{background:#CBA054}
   .hero .btn.ghost{background:transparent;color:var(--white);border:1px solid rgba(255,255,255,.5)}
   .hero .btn.ghost:hover{border-color:var(--white)}
+  .heroid{display:flex;align-items:center;gap:14px;margin-bottom:22px}
+  .heroid img{width:74px;height:74px;border-radius:50%;object-fit:cover;border:2px solid var(--brass);flex:0 0 auto}
+  .heroid .who{font-size:15px;line-height:1.35}
+  .heroid .who strong{display:block;font-family:var(--serif);font-size:19px;font-weight:600;color:var(--white)}
+  .heroid .who span{color:#9AA6B8}
   .glance{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-top:3px solid var(--brass);padding:26px 28px}
   .glance dt{font-size:13px;color:#9AA6B8;margin-top:14px}
   .glance dt:first-child{margin-top:0}
@@ -151,7 +156,9 @@
     nav{padding:16px 0}
     nav ul li:not(.keep){display:none}
     .hero{padding:36px 0 52px}
-    .hero h1{font-size:36px}
+    .hero h1{font-size:34px}
+    .heroid img{width:58px;height:58px}
+    .heroid .who strong{font-size:17px}
     .hero p.lead{font-size:17px}
     .btn{display:block;text-align:center}
     .btn.ghost{margin:10px 0 0}
@@ -181,6 +188,10 @@
 <header class="hero" id="top">
   <div class="wrap">
     <div>
+      <div class="heroid">
+        <img src="photo.jpg" alt="Peace Obisike">
+        <p class="who"><strong>Peace Obisike</strong><span>Legal virtual assistant &middot; Final-year LL.B candidate</span></p>
+      </div>
       <h1>The hours your practice loses to paperwork, returned to you.</h1>
       <p class="lead">I'm a legal virtual assistant working remotely with solo attorneys and small firms in the US and UK. Legal research, drafting, case administration and client intake, handled reliably and delivered review-ready, so your billable time goes to the law.</p>
       <a class="btn" href="#contact">Book a free discovery call</a>

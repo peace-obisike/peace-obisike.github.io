@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Legal Virtual Assistant for US &amp; UK Law Firms | Peace Obisike</title>
+<meta name="description" content="Peace Obisike is a legal virtual assistant and virtual paralegal providing remote legal support to solo attorneys and small law firms in the US and UK: legal research, document drafting, case management, e-filing support and client intake. Final-year LL.B candidate with four law-firm placements.">
+<link rel="canonical" href="https://peace-obisike.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Legal Virtual Assistant for US &amp; UK Law Firms | Peace Obisike">
+<meta property="og:description" content="Remote legal research, drafting, case management and client intake for solo attorneys and small firms. Review-ready work, under NDA.">
+<meta property="og:image" content="https://peace-obisike.github.io/photo_1.jpg">
+<meta property="og:url" content="https://peace-obisike.github.io/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Peace Chisom Obisike","jobTitle":"Legal Virtual Assistant","description":"Remote legal support for US and UK law firms: legal research, drafting, case management and client intake.","email":"mailto:obisikechisomp@gmail.com","url":"https://peace-obisike.github.io/","image":"https://peace-obisike.github.io/photo_1.jpg","address":{"@type":"PostalAddress","addressLocality":"Abuja","addressCountry":"NG"},"sameAs":["https://www.linkedin.com/in/peace-obisike-legal"]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#17233A; --ink-soft:#4A5568; --paper:#EEF1F4; --white:#FFFFFF;
+    --brass:#B8893A; --line:#CDD4DD; --ink-deep:#0D172B;
+    --serif:"Fraunces",Georgia,serif; --sans:"Public Sans",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.6;font-size:17px}
+  a{color:var(--ink)}
+  a:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
+  img{max-width:100%}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+  h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.1;letter-spacing:-0.01em}
+  section{padding:72px 0;border-bottom:1px solid var(--line)}
+  section h2{font-size:clamp(28px,4vw,40px);margin-bottom:12px}
+  .intro{color:var(--ink-soft);max-width:36em;margin-bottom:40px}
+  .btn{display:inline-block;background:var(--ink);color:var(--white);text-decoration:none;padding:14px 24px;border-radius:4px;font-weight:500}
+  .btn:hover{background:#0F1729}
+  .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--ink);margin-left:10px}
+  .btn.ghost:hover{background:var(--white)}
+
+  nav{padding:18px 0;background:var(--ink)}
+  nav .brand,nav ul a{color:#C9D1DF}
+  nav ul a:hover{color:var(--white)}
+  nav .cta{background:var(--brass);color:var(--ink-deep);border:0}
+  nav .cta:hover{background:#CBA054;color:var(--ink-deep)}
+  nav .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px}
+  .brand{font-family:var(--serif);font-size:20px;text-decoration:none;white-space:nowrap}
+  nav ul{list-style:none;display:flex;gap:24px;font-size:15px;align-items:center}
+  nav ul a{text-decoration:none;color:var(--ink-soft);white-space:nowrap}
+  nav ul a:hover{color:var(--ink);text-decoration:underline;text-underline-offset:4px}
+  nav .cta{color:var(--ink);font-weight:500;border:1px solid var(--ink);padding:8px 14px;border-radius:4px}
+  nav .cta:hover{background:var(--white);text-decoration:none}
+
+  .hero{padding:64px 0 72px;background:var(--ink);color:var(--white)}
+  .hero .wrap{display:grid;grid-template-columns:1.4fr 1fr;gap:56px;align-items:end}
+  .hero h1{font-size:clamp(36px,6vw,64px);margin-bottom:24px;color:var(--white)}
+  .hero p.lead{font-size:20px;color:#C9D1DF;max-width:34em;margin-bottom:34px}
+  .hero .btn{background:var(--brass);color:var(--ink-deep);font-weight:600}
+  .hero .btn:hover{background:#CBA054}
+  .hero .btn.ghost{background:transparent;color:var(--white);border:1px solid rgba(255,255,255,.5)}
+  .hero .btn.ghost:hover{border-color:var(--white)}
+  .heroid{display:flex;align-items:center;gap:14px;margin-bottom:22px}
+  .heroid img{width:74px;height:74px;border-radius:50%;object-fit:cover;border:2px solid var(--brass);flex:0 0 auto}
+  .heroid .who{font-size:15px;line-height:1.35}
+  .heroid .who strong{display:block;font-family:var(--serif);font-size:19px;font-weight:600;color:var(--white)}
+  .heroid .who span{color:#9AA6B8}
+  .glance{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-top:3px solid var(--brass);padding:26px 28px}
+  .glance dt{font-size:13px;color:#9AA6B8;margin-top:14px}
+  .glance dt:first-child{margin-top:0}
+  .glance dd{font-weight:500;color:var(--white)}
+
+  .strip{padding:26px 0;background:#F3EAD8;border-bottom:1px solid #E6D8B8}
+  .strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+  .strip strong{display:block;font-family:var(--serif);font-size:20px}
+  .strip span{font-size:14px;color:var(--ink-soft)}
+
+  .service{display:grid;grid-template-columns:260px 1fr;gap:24px;padding:26px 0;border-top:1px solid var(--line)}
+  .service:last-of-type{border-bottom:1px solid var(--line)}
+  .service h3{font-size:22px}
+  .service p{color:var(--ink-soft);max-width:38em}
+  .service ul{margin-top:10px;padding-left:18px;color:var(--ink-soft);font-size:15px}
+
+  .trust-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px 48px}
+  .trust-grid h3{font-size:19px;margin-bottom:8px;padding-left:16px;border-left:3px solid var(--brass)}
+  .trust-grid p{color:var(--ink-soft);font-size:16px;padding-left:19px}
+
+  .band{background:var(--ink);color:var(--white);padding:56px 0}
+  .band .wrap{display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap}
+  .band h2{font-size:clamp(24px,3vw,32px);margin-bottom:6px;color:var(--white)}
+  .band p{color:#C9D1DF}
+  .band .btn{background:var(--brass);color:var(--ink-deep);font-weight:600}
+  .band .btn:hover{background:#CBA054}
+  .timeline{list-style:none;border-left:2px solid var(--line);margin-left:8px}
+  .timeline li{position:relative;padding:0 0 32px 32px}
+  .timeline li::before{content:"";position:absolute;left:-7px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--brass);border:2px solid var(--paper)}
+  .timeline .when{font-size:14px;color:var(--brass);font-weight:600}
+  .timeline h3{font-size:21px;margin:4px 0 6px}
+  .timeline p{color:var(--ink-soft);max-width:40em;font-size:16px}
+
+  .samples{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .sample{background:var(--white);padding:26px;border-left:3px solid var(--brass)}
+  .sample .kind{font-size:13px;color:var(--brass);font-weight:600;margin-bottom:8px}
+  .sample h3{font-size:20px;margin-bottom:10px}
+  .sample p{font-size:15px;color:var(--ink-soft)}
+  .sample a{display:inline-block;margin-top:14px;font-size:15px}
+  .sample .note{display:block;margin-top:12px;font-size:13px;color:var(--ink-soft);font-style:italic}
+
+  .tools{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+  .tools h3{font-size:18px;margin-bottom:10px;padding-bottom:8px;border-bottom:2px solid var(--brass)}
+  .tools ul{list-style:none;color:var(--ink-soft);font-size:16px}
+  .tools li{padding:5px 0}
+
+  .about .wrap{display:grid;grid-template-columns:1fr 1.4fr;gap:56px}
+  .about p{margin-bottom:16px;max-width:38em}
+  .portrait img{display:block;width:100%;height:auto;border-radius:4px}
+  .about .facts{margin-top:20px;border-top:3px solid var(--brass);background:var(--white);padding:22px 26px}
+  .about .facts li{list-style:none;padding:9px 0;border-bottom:1px solid var(--line);font-size:15px}
+  .about .facts li:last-child{border-bottom:0}
+
+  .steps{counter-reset:step;list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+  .steps li{counter-increment:step}
+  .steps li::before{content:counter(step);font-family:var(--serif);font-size:40px;color:var(--brass);display:block;line-height:1;margin-bottom:10px}
+  .steps h3{font-size:18px;margin-bottom:6px}
+  .steps p{font-size:15px;color:var(--ink-soft)}
+
+  .faq details{border-top:1px solid var(--line);padding:18px 0}
+  .faq details:last-of-type{border-bottom:1px solid var(--line)}
+  .faq summary{font-family:var(--serif);font-size:20px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";color:var(--brass);font-size:24px;line-height:1}
+  .faq details[open] summary::after{content:"–"}
+  .faq details p{color:var(--ink-soft);margin-top:10px;max-width:40em}
+
+  .contact{border-bottom:0;padding-bottom:64px;background:var(--ink);color:var(--white)}
+  .contact h2{color:var(--white)} .contact .intro{color:#C9D1DF} .contact .big{color:var(--brass)} .contact ul{color:#C9D1DF} .contact li a{color:var(--white)}
+  .contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+  .contact .big{font-family:var(--serif);font-size:clamp(20px,3vw,30px);text-decoration:none;display:block;margin:18px 0;word-break:break-all}
+  .contact .big:hover{text-decoration:underline;text-underline-offset:6px}
+  .contact ul{list-style:none;color:var(--ink-soft)}
+  .contact li{padding:8px 0}
+  footer{padding:24px 0 48px;font-size:14px;color:#9AA6B8;background:var(--ink-deep)}
+  footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+  @media (max-width:900px){
+    .hero .wrap,.about .wrap,.contact .wrap{grid-template-columns:1fr;gap:36px}
+    .strip .wrap,.tools,.trust-grid{grid-template-columns:1fr 1fr}
+    .service{grid-template-columns:1fr;gap:8px}
+    .samples{grid-template-columns:1fr}
+    .steps{grid-template-columns:1fr 1fr}
+    .portrait{max-width:360px}
+  }
+  @media (max-width:600px){
+    body{font-size:16px}
+    section{padding:52px 0}
+    nav{padding:16px 0}
+    nav ul li:not(.keep){display:none}
+    .hero{padding:36px 0 52px}
+    .hero h1{font-size:34px}
+    .heroid img{width:58px;height:58px}
+    .heroid .who strong{font-size:17px}
+    .hero p.lead{font-size:17px}
+    .btn{display:block;text-align:center}
+    .btn.ghost{margin:10px 0 0}
+    .strip .wrap,.tools,.trust-grid,.steps{grid-template-columns:1fr}
+    .band .wrap{flex-direction:column;align-items:flex-start}
+    .band .btn{width:100%}
+    .faq summary{font-size:18px}
+    footer .wrap{flex-direction:column}
+  }
+</style>
+</head>
+<body>
+
+<nav aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="#top">Peace Obisike</a>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#work">Work samples</a></li>
+      <li><a href="#about">About</a></li>
+      <li class="keep"><a class="cta" href="#contact">Book a call</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <div class="heroid">
+        <img src="photo_1.jpg" alt="Peace Obisike">
+        <p class="who"><strong>Peace Obisike</strong><span>Legal virtual assistant &middot; Final-year LL.B candidate</span></p>
+      </div>
+      <h1>The hours your practice loses to paperwork, returned to you.</h1>
+      <p class="lead">I'm a legal virtual assistant working remotely with solo attorneys and small firms in the US and UK. Legal research, drafting, case administration and client intake, handled reliably and delivered review-ready, so your billable time goes to the law.</p>
+      <a class="btn" href="#contact">Book a free discovery call</a>
+      <a class="btn ghost" href="#work">See work samples</a>
+    </div>
+    <dl class="glance">
+      <dt>Availability</dt>
+      <dd>Flexible hours, scaled to your workload</dd>
+      <dt>Overlap</dt>
+      <dd>Your full UK working day, and online before US Eastern business hours begin</dd>
+      <dt>Engagement</dt>
+      <dd>Retainer or per-project. NDA signed before any file access.</dd>
+      <dt>Currently</dt>
+      <dd>Final-year LL.B candidate, on my fourth law-firm placement</dd>
+    </dl>
+  </div>
+</header>
+
+<div class="strip" aria-label="Credentials">
+  <div class="wrap">
+    <div><strong>4 placements</strong><span>in litigation and commercial practice at Abuja law firms, 2023&ndash;2026</span></div>
+    <div><strong>LL.B candidate</strong><span>Final year, Godfrey Okoye University, Enugu</span></div>
+    <div><strong>NICArb</strong><span>Arbitration training, assessment passed at grade A</span></div>
+    <div><strong>Director of the Year</strong><span>LAWSAN Campus Director, South East Zone, 2025</span></div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <h2>What I take off your desk</h2>
+    <p class="intro">Everything below is the work that needs care and legal training, but not a licensed attorney's hour. All of it is prepared for your review and sign-off.</p>
+
+    <div class="service">
+      <h3>Legal research &amp; memoranda</h3>
+      <div>
+        <p>A defined legal question answered in a structured memo (issue, brief answer, facts, analysis, conclusion), with every citation checked against the source so you can verify in minutes.</p>
+        <ul>
+          <li>Case law, statute and regulatory research</li>
+          <li>Judgment summaries, headnotes and case briefs</li>
+          <li>Comparative notes across US states or UK jurisdictions</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="service">
+      <h3>Drafting &amp; document review</h3>
+      <div>
+        <p>First drafts and clean-ups from your precedents and instructions, formatted to house style and proofread before they reach your desk.</p>
+        <ul>
+          <li>Correspondence, demand letters and engagement letters</li>
+          <li>Contracts, NDAs and agreements from template</li>
+          <li>Pleadings and motions: formatting, exhibits, tables of authorities, citation checks</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="service">
+      <h3>Case, calendar &amp; document management</h3>
+      <div>
+        <p>Matters set up and kept current in your practice management system, with court dates and limitation periods flagged well before they fall due.</p>
+        <ul>
+          <li>Docketing, deadline tracking and calendar management</li>
+          <li>File organisation, document indexing, discovery and e-filing support</li>
+          <li>Time entries, billing support and invoice preparation</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="service">
+      <h3>Client intake &amp; communication</h3>
+      <div>
+        <p>A professional first point of contact, so new enquiries are answered the same business day and existing clients are kept informed in your voice.</p>
+        <ul>
+          <li>Intake questionnaires, conflict checks and follow-up</li>
+          <li>Inbox management and appointment scheduling</li>
+          <li>Client status updates and reminders</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="service">
+      <h3>Practice administration &amp; executive support</h3>
+      <div>
+        <p>The whole administrative layer that keeps a small practice running: the legal-specific work and the general executive support that usually falls to whoever is nearest.</p>
+        <ul>
+          <li>Transcription and summaries of hearings, depositions and meetings</li>
+          <li>Inbox management, diary control and meeting coordination</li>
+          <li>Travel booking, itineraries and expense tracking</li>
+          <li>Spreadsheets, databases, data entry and reporting</li>
+          <li>CRM and contact list maintenance</li>
+          <li>Presentation decks, document formatting and template building</li>
+          <li>Supplier, vendor and third-party correspondence</li>
+          <li>Research and reporting on non-legal business questions</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Why attorneys can hand work to me with confidence</h2>
+    <p class="intro">Remote support only works if you can trust what comes back. These are the standards every task is held to.</p>
+    <div class="trust-grid">
+      <div><h3>Verified, never assumed</h3><p>Every citation is checked against the primary source before it reaches you. AI-assisted research is used only with independent verification, never as the final word.</p></div>
+      <div><h3>Confidential by default</h3><p>An NDA is signed before any file access. I work only inside the systems you approve and never store client material outside them.</p></div>
+      <div><h3>Review-ready, not rough</h3><p>Work arrives formatted, proofread and structured for a quick attorney review. I do not give legal advice or client-facing opinions; that judgment stays with you.</p></div>
+      <div><h3>Clear communication</h3><p>One clear question early beats a wrong assumption late. You get a shared task list, agreed turnaround times and a short end-of-week summary.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="band">
+  <div class="wrap">
+    <div>
+      <h2>Start with one small task, no commitment.</h2>
+      <p>Send me a real piece of work. Judge the quality before you decide anything.</p>
+    </div>
+    <a class="btn" href="#contact">Book a discovery call</a>
+  </div>
+</div>
+
+<section id="experience">
+  <div class="wrap">
+    <h2>Experience</h2>
+    <p class="intro">Real law-firm work, not just coursework.</p>
+    <ol class="timeline">
+      <li><span class="when">2024, 2025, 2026</span><h3>Legal Intern, Legal Frontiers Solicitors, Abuja</h3><p>Three consecutive placements. Legal research and memo preparation, drafting of court processes and correspondence, case file organisation and client meeting support across litigation and commercial matters.</p></li>
+      <li><span class="when">2023</span><h3>Legal Intern, Maxwell Opara &amp; Associates, Abuja</h3><p>Document review and indexing, research support and preparation of case materials for counsel.</p></li>
+      <li><span class="when">2024 &ndash; 2025</span><h3>Campus Director, Law Students' Association of Nigeria (LAWSAN)</h3><p>Named Campus Director of the Year for the South East Zone. Coordinated my university's hosting of the first South-East LAWSAN Leadership Conference, which filled a 500-seat auditorium with representatives from around 15 faculties of law, and founded a regional legal essay competition.</p></li>
+      <li><span class="when">2024 &ndash; 2026</span><h3>Professional training</h3><p>ALX Virtual Assistant Programme. Nigerian Institute of Chartered Arbitrators (NICArb) arbitration training, assessment passed at grade A. Virtual legal assistant coursework covering legal terminology, case and document management, e-filing procedure, billing and client intake.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <h2>Work samples</h2>
+    <p class="intro">Examples of the deliverables you can expect. Full samples are available on request.</p>
+    <div class="samples">
+      <div class="sample"><div class="kind">Records management</div><h3>Legal records index &amp; retrieval log</h3><p>A complete records system for a single litigation file: one row per document recording its type, source, dates, page count, Bates range, storage path, confidentiality flag, retention date and quality control sign-off. Beside it, a retrieval log recording who took a document out of the file, why, and whether it came back.</p><a href="records-index-retrieval-log.pdf">Read the sample (PDF)</a><span class="note">Sample prepared with invented facts. No client information.</span></div>
+      <div class="sample"><div class="kind">Procedure &amp; compliance</div><h3>File naming &amp; records QC procedure</h3><p>The written standard behind the index: how every document is named, where it is stored, how duplicates and superseded versions are handled, the nine-step workflow a document passes through on arrival, and the fourteen checks it must pass before its status changes to filed.</p><a href="file-naming-qc-procedure.pdf">Read the sample (PDF)</a><span class="note">Sample prepared with invented facts. No client information.</span></div>
+      <div class="sample"><div class="kind">Procedure &amp; compliance</div><h3>Conflict check procedure</h3><p>A standard operating procedure for screening a new inquiry before a matter opens: what is searched, where, how a possible match is escalated, and where the assistant's authority stops. Built on ABA Model Rules 1.7, 1.9 and 1.10, with a worked log entry.</p><a href="conflict-check-procedure.pdf">Read the sample (PDF)</a><span class="note">Sample prepared with invented facts. No client information.</span></div>
+      <div class="sample"><div class="kind">Client intake</div><h3>Personal injury intake form</h3><p>A structured intake questionnaire capturing identifying details, incident facts, treatment, insurance and prior representation, sequenced so the conflict check can be run before the substance of the matter is taken.</p><a href="https://forms.gle/nEidCWHsEPZA8xr86" target="_blank" rel="noopener">Open the sample form</a><span class="note">Sample prepared with invented facts. No client information.</span></div>
+      <div class="sample"><div class="kind">Record keeping</div><h3>Conflict check log</h3><p>The running record that sits alongside the procedure: every name searched, every system searched, the result, and the attorney's determination, logged whether the check was clear or not.</p><a href="https://docs.google.com/spreadsheets/d/1uqP3zy5N30RXCiTPr6bxSeixA1og00iB4Asa360ZM_s/edit?usp=sharing" target="_blank" rel="noopener">Open the sample log</a><span class="note">Sample prepared with invented facts. No client information.</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="tools">
+  <div class="wrap">
+    <h2>Tools I work with</h2>
+    <p class="intro">I work inside your existing stack, and I pick up new software quickly. What I bring to it is legal training and the discipline to check everything against the source.</p>
+    <div class="tools">
+      <div><h3>Legal research &amp; documents</h3><ul><li>Primary-source research: statutes, case law, regulations</li><li>Citation verification against the original source</li><li>LawPavilion and Lawexa (Nigerian practice)</li><li>PDF editing, redaction and document assembly</li><li>Case management workflows: intake, docketing, file structure</li><li>Electronic document management and e-filing procedure</li><li>Firm research and case management platforms: I work on your subscription and train on it in the first week</li></ul></div>
+      <div><h3>Collaboration &amp; communication</h3><ul><li>Slack</li><li>Zoom and Google Meet</li><li>Loom</li><li>Notion</li><li>Dropbox and OneDrive</li><li>Calendly</li></ul></div>
+      <div><h3>Documents &amp; productivity</h3><ul><li>Microsoft 365 (Word, Excel, Outlook)</li><li>Google Workspace (Docs, Sheets, Drive, Calendar, Gmail)</li><li>Canva</li><li>Spreadsheet trackers and reporting</li><li>AI-assisted research, independently verified</li><li>New software: I learn a firm's stack in the first week</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="wrap">
+    <div>
+      <div class="portrait"><img src="photo_1.jpg" alt="Peace Obisike, legal virtual assistant" width="960" height="1200"></div>
+      <ul class="facts">
+        <li>Final-year LL.B candidate, Godfrey Okoye University, Enugu</li>
+        <li>Four law-firm placements across litigation and commercial matters, 2023&ndash;2026</li>
+        <li>NICArb arbitration training, assessment passed at grade A</li>
+        <li>ALX Virtual Assistant Programme</li>
+        <li>Abuja, Nigeria; working remotely with US and UK practices</li>
+      </ul>
+    </div>
+    <div>
+      <h2>About me</h2>
+      <p>I'm Peace Chisom Obisike, a final-year law student who has spent four placements inside working law firms rather than only in lecture halls. That is where I learned what actually eats an attorney's day: not the law, but the research nobody has time to run, the drafts that sit half-done, and the deadlines that live in someone's head.</p>
+      <p>I bring a law student's training and a virtual assistant's discipline: care with detail, a calm way with a full inbox, and the habit of asking one clear question early rather than guessing. I do not give legal advice or client-facing opinions; that judgment stays with the lawyer. Confidentiality is non-negotiable, and I sign an NDA before any file changes hands.</p>
+      <p>Outside client work I completed arbitration training with the Nigerian Institute of Chartered Arbitrators, and I served as Campus Director of the Law Students' Association of Nigeria, where I was named Campus Director of the Year for the South East Zone.</p>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="wrap">
+    <h2>How we'd work together</h2>
+    <p class="intro">Simple and predictable from the first call onward.</p>
+    <ol class="steps">
+      <li><h3>Discovery call</h3><p>Thirty minutes on what is eating your time and what you want handed off.</p></li>
+      <li><h3>Trial task</h3><p>One small, real piece of work so you can judge the quality before committing.</p></li>
+      <li><h3>Agree terms</h3><p>Fixed weekly hours or a per-project quote, with an NDA and clear turnaround times.</p></li>
+      <li><h3>Ongoing support</h3><p>Weekly check-in, shared task list, and a short end-of-week summary of everything done.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="faq" class="faq">
+  <div class="wrap">
+    <h2>Questions attorneys usually ask</h2>
+    <p class="intro">Straight answers to the practical things.</p>
+    <details><summary>What is a legal virtual assistant, and how is it different from a paralegal?</summary><p>A legal virtual assistant provides remote legal and administrative support under an attorney's supervision: research, drafting, case management and intake. The scope overlaps with a paralegal's, but the work is delivered remotely, on flexible hours, and always for attorney review rather than as independent legal advice.</p></details>
+    <details><summary>Can you work in my time zone?</summary><p>Yes. I work from West Africa Time (UTC+1), which covers the full UK working day and US Eastern mornings. Deadlines and hearing dates are tracked in your time zone, not mine.</p></details>
+    <details><summary>You are based in Nigeria. How does that work for data protection?</summary><p>For UK and EU firms, transfers to Nigeria need a lawful transfer mechanism. I work under a data processing agreement with the International Data Transfer Agreement or the UK Addendum in place, access files only inside your systems, and keep nothing locally. I am glad to work through this with your compliance lead before anything is signed.</p></details>
+    <details><summary>How do you handle confidentiality?</summary><p>I sign an NDA before any file access, work only inside the systems you approve, and never store client material elsewhere. You can revoke access at any time.</p></details>
+    <details><summary>How are you paid, and what does it cost?</summary><p>Either a fixed weekly-hours retainer or a per-project quote, agreed before work starts, invoiced through platforms that support international payment. Rates depend on scope; the discovery call is where we settle that.</p></details>
+    <details><summary>Do you use AI in your work?</summary><p>Where it speeds up a first pass, yes, and never as the final word. Every citation, quotation and fact is independently verified against the primary source before anything reaches you.</p></details>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div>
+      <h2>Book a free discovery call</h2>
+      <p class="intro" style="margin-bottom:0">Tell me what is eating your week. I reply within one business day.</p>
+      <a class="big" href="mailto:obisikechisomp@gmail.com?subject=Discovery%20call%20-%20legal%20support">obisikechisomp@gmail.com</a>
+    </div>
+    <ul>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/peace-obisike-legal">linkedin.com/in/peace-obisike-legal</a></li>
+      <li>Covering your full UK working day and US Eastern mornings</li>
+      <li>Based in Nigeria (WAT, UTC+1), working remotely</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 Peace Obisike &middot; Legal Virtual Assistant &middot; Virtual Paralegal &middot; Remote Legal Support</span>
+    <span>Not a law firm. All work is prepared for review by supervising counsel; no legal advice is provided.</span>
+  </div>
+</footer>
+
+</body>
+</html>
